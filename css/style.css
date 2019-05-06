@@ -1,0 +1,209 @@
+html,
+body {
+    height: 99%
+}
+
+* {
+    -webkit-transition: opacity .3s ease-in-out;
+    -moz-transition: opacity .3s ease-in-out;
+    -ms-transition: opacity .3s ease-in-out;
+    -o-transition: opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out;
+    transition: 0.3s
+}
+
+body {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#title {
+    width: 40%;
+    margin-top: -10%;
+    margin-bottom: -8%;
+}
+
+#title-txt {
+    font-size: 2em;
+}
+
+#sub {
+    font-size: 2.3em;
+    margin-bottom: 5%;
+    font-family: 'Lobster Two', cursive;
+    color: white;
+    font-style: italic;
+}
+
+#sub:hover {
+    color: cadetblue;
+}
+
+#sub:active {
+    color: skyblue;
+}
+
+#sub a {
+    color: #b366ff;
+    text-decoration: none;
+}
+
+#sub a:link {
+    color: #b366ff;
+    text-decoration: none;
+}
+
+#sub a:visited {
+    color: #b366ff;
+    text-decoration: none;
+}
+
+#sub a:hover {
+    color: #9933ff;
+}
+
+#sub a:active {
+    color: #3366ff;
+}
+
+#navsub {
+    font-size: 1.7em;
+    margin-bottom: 5%;
+}
+
+#container {
+    text-align: center;
+    width: 100%;
+    background-blend-mode: difference;
+}
+
+.bigfuckinggap {
+    margin-top: 100px;
+}
+
+#targyak {
+    text-align: center;
+}
+
+#button img {
+    height: 35px;
+}
+
+#puska {
+    visibility: hidden;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+#puska div {
+    margin-top: 4%;
+    position: absolute;
+    margin-bottom: 30px;
+    width: 100%;
+    background-blend-mode: difference;
+}
+
+#puska div a {
+    padding-left: 10px;
+    color: firebrick;
+}
+
+#puska div a:hover {
+    padding-left: 10px;
+    color: chocolate;
+}
+
+#puska button {
+    visibility: visible;
+    text-decoration: none;
+    color: black;
+    font-size: 1.4em;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-top: 3px;
+    background-color: black;
+    color: mediumseagreen;
+    cursor: pointer;
+    border: 2px solid lime;
+    margin-top: 20%;
+}
+
+#puska button:hover {
+    visibility: visible;
+    text-decoration: none;
+    color: black;
+    font-size: 1.4em;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+    padding-bottom: 5px;
+    padding-top: 3px;
+    background-color: lime;
+    border: 2px solid lime;
+    margin-top: 20%;
+}
+
+#puska #close {
+    visibility: hidden;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(7, 181, 193, 0.4);
+    text-align: center;
+    height: 2.6%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.foo1 {color: white;}
+
+.foo2 {color: red;}
+
+.foo1 a {
+    color: #b366ff;
+    text-decoration: none;
+}
+
+.foo1 a:link {
+    color: #b366ff;
+    text-decoration: none;
+}
+
+.foo1 a:visited {
+    color: #b366ff;
+    text-decoration: none;
+}
+
+.foo1 a:hover {
+    color: #9933ff;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.foo1 a:active {
+    color: #3366ff;
+    text-decoration: underline;
+}
+
+#bigtext {
+    position: absolute;
+    font-size: 1.2em;
+    width: 96%;
+    height: 100%;
+}

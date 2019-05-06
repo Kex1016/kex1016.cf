@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title>Kex - AL Themes</title>
+    <link rel="stylesheet" type="text/css" href="../css/imgstyle.css" />
+    <link rel="stylesheet" type="text/css" href="../css/buttons.css" />
+    <link rel="stylesheet" type="text/css" href="../css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="../css/imgoverlays.css" />
+    <link rel="stylesheet" type="text/css" href="../css/txtcolors.css" />
+    <link rel="stylesheet" type="text/css" href="../font/stylesheet.css" />
+    <script src="../js/script.js"></script>
+    <meta name="twitter:card" content="Kex1016's website." />
+    <meta name="twitter:site" content="@kex1016" />
+    <meta name="twitter:creator" content="@kex1016" />
+    <meta property="og:title" content="Kex - AniList Themes" />
+    <meta property="og:description" content="I watch anime." />
+    <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+    <!--Ionic icons-->
+    <link href='http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href='../themes.ico' rel='shortcut icon'>
+</head>
+
+<body onload="Load()">
+    <div id="container">
+        <div id="title-txt">
+            <span class="txt-white">A<span class="txt-lblue">L</span> Profile themes</span>
+        </div>
+        <a href="../" id="button" class="lblue concert-one"><span class="txt-white">Back</span></a>
+        <p id="img-gap"></p>
+        <div class="images">
+            <div class="img-subtitle"><span>Yui Theme (October, 2018)</span></div>
+            <img src="img/1-yui.png" alt="Yui" class="image">
+        </div>
+        <div class="images">
+            <div class="img-subtitle"><span>RELEASE THE SPYCE Theme (November, 2018)</span></div>
+            <img src="img/2-releasethespyce.png" alt="Yui" class="image">
+        </div>
+        <div class="images">
+            <div class="img-subtitle"><span>New Game Theme (December, 2018)</span></div>
+            <img src="img/3-newgame.png" alt="Yui" class="image">
+        </div>
+        <div class="images">
+            <div class="img-subtitle"><span>Megumi Theme (January, 2019)</span></div>
+            <img src="img/4-megumi.png" alt="Yui" class="image">
+        </div>
+        <div class="images">
+            <div class="img-subtitle"><span>Chika (Kaguya-sama) Theme (February, 2019)</span></div>
+            <img src="img/5-chika.png" alt="Yui" class="image">
+        </div>
+        <div class="images">
+            <div class="img-subtitle"><span>Yurucamp Theme (March, 2019)</span></div>
+            <img src="img/6-yurucamp.png" alt="Yui" class="image">
+        </div>
+        <div class="images">
+            <div class="img-subtitle"><span>Flip Flappers Theme (April, 2019)</span></div>
+            <img src="img/7-flipflappers.png" alt="Yui" class="image">
+        </div>
+        <div class="images">
+            <div class="img-subtitle"><span>Heart of the Woods Theme (May, 2019)</span></div>
+            <img src="img/8-hotw.png" alt="Yui" class="image">
+        </div>
+
+
+        <!---- End of content - Footer & other scripts incoming ---->
+
+
+        <div id="footer">
+            <div>
+                <span class="foo1">Made with </span><span class="foo2">❤</span><span class="foo1"> by <a href="https://anilist.co/user/Kex1016/" target="_blank">Kex1016</a></span>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    // background: url('img/bg/7.jpg') center / cover;
+
+    // Select all links with hashes
+    $('a[href*="#"]')
+        // Remove links that don't actually link to anything
+        .not('[href="#"]')
+        .not('[href="#0"]')
+        .click(function(event) {
+            // On-page links
+            if (
+                location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+                location.hostname == this.hostname
+            ) {
+                // Figure out element to scroll to
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                // Does a scroll target exist?
+                if (target.length) {
+                    // Only prevent default if animation is actually gonna happen
+                    event.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000, function() {
+                        // Callback after animation
+                        // Must change focus!
+                        var $target = $(target);
+                        $target.focus();
+                        if ($target.is(":focus")) { // Checking if the target was focused
+                            return false;
+                        } else {
+                            $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                            $target.focus(); // Set focus again
+                        };
+                    });
+                }
+            }
+        });
+</script></html>

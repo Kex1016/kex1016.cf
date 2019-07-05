@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8' />
+    <title>Kex - Yuri Conoisseour</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/buttons.css" />
+    <link rel="stylesheet" type="text/css" href="css/txtcolors.css" />
+    <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="font/stylesheet.css" />
+    <script src="js/script.js"></script>
+    <meta name="twitter:card" content="Kex1016's website." />
+    <meta name="twitter:site" content="@kex1016" />
+    <meta name="twitter:creator" content="@kex1016" />
+    <meta property="og:title" content="Kex - Yuri Conoisseour" />
+    <meta property="og:description" content="I watch anime." />
+    <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+    <!--Ionic icons-->
+    <link href='http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href='favicon.ico' rel='shortcut icon'>
+</head>
+
+<body onload="Load()">
+    <div id="container">
+        <div id="hidden">
+            <div id="header">
+
+                    <img id="title" src="img/logo.png">
+
+
+                <p class="bigfuckinggap"></p>
+                <div id="sub"></div>
+                <p class="bigfuckinggap"></p>
+            </div>
+        </div>
+        <div id="nav">
+            <a href="themes" id="button" class="lblue concert-one"><span class="txt-white">Profile Themes [<span class="txt-white">A</span><span class="txt-lblue">L</span>]</span></a>
+            <a href="badges" id="button" class="yellow concert-one txt-white">Badges</a>
+            <a href="manga" id="button" class="purple concert-one txt-white">Manga Challenges</a>
+        </div>
+    </div>
+    <div id="footer">
+        <div>
+            <span class="foo1">Made with </span><span class="foo2">❤</span><span class="foo1"> by <a href="https://anilist.co/user/Kex1016/" target="_blank">Kex1016</a></span>
+        </div>
+    </div>
+</body>
+<script>
+    var images = ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg'];
+    $('body').css({
+        'background': 'url(img/bg/' + images[Math.floor(Math.random() * images.length)] + ') center / cover'
+    });
+
+    // background: url('img/bg/7.jpg') center / cover;
+
+    // Select all links with hashes
+    $('a[href*="#"]')
+        // Remove links that don't actually link to anything
+        .not('[href="#"]')
+        .not('[href="#0"]')
+        .click(function(event) {
+            // On-page links
+            if (
+                location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
+                location.hostname == this.hostname
+            ) {
+                // Figure out element to scroll to
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                // Does a scroll target exist?
+                if (target.length) {
+                    // Only prevent default if animation is actually gonna happen
+                    event.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000, function() {
+                        // Callback after animation
+                        // Must change focus!
+                        var $target = $(target);
+                        $target.focus();
+                        if ($target.is(":focus")) { // Checking if the target was focused
+                            return false;
+                        } else {
+                            $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                            $target.focus(); // Set focus again
+                        };
+                    });
+                }
+            }
+        });
+</script></html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+	<title>Kex1016.ga - Epic Style</title>
+
+	<!-- CSS  -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+	<link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+	<!--- Start of script --->
+	<script>
+		var i = 0;
+		var txt = 'My links'; /* The text */
+		var speed = 100; /* The speed/duration of the effect in milliseconds */
+
+		function typeWriter() {
+			if (i < txt.length) {
+				document.getElementById("titlestuff").innerHTML += txt.charAt(i);
+				i++;
+				setTimeout(typeWriter, speed);
+			}
+		}
+
+		function underScore() {
+			setTimeout(function() {
+				typeWriter();
+			}, 2000)
+			document.getElementById("titlestuff2").style.visibility = "visible";
+			setTimeout(function() {
+				document.getElementById("titlestuff2").style.visibility = "hidden";
+			}, 300);
+			setInterval(function() {
+				document.getElementById("titlestuff2").style.visibility = "visible";
+				setTimeout(function() {
+					document.getElementById("titlestuff2").style.visibility = "hidden";
+				}, 300);
+			}, 700);
+		}
+	</script>
+	<!--- End of script --->
+
+</head>
+
+<body style="background: #263238; color: white;" onload="underScore()">
+	<div id="content">
+		<div class="navbar-fixed">
+			<nav class="light-blue lighten-1" role="navigation">
+				<div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo center">Kex's site</a>
+					<ul class="right hide-on-med-and-down">
+						<li><a href="../">Home</a></li>
+						<li class="active"><a href="#">Links</a></li>
+						<li><a href="../anilist/">AniList</a></li>
+					</ul>
+
+					<ul id="nav-mobile" class="sidenav">
+						<li><a href="../">Home</a></li>
+						<li class="active"><a href="#">Links</a></li>
+						<li><a href="../anilist/">AniList</a></li>
+					</ul>
+					<a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+				</div>
+			</nav>
+		</div>
+		<div class="section no-pad-bot" id="index-banner">
+			<div class="container">
+				<br><br>
+				<h1 class="header center orange-text"><span id="titlestuff"></span><span id="titlestuff2">_</span></h1>
+			</div>
+		</div>
+
+
+		<div class="container">
+			<div class="section">
+
+				<!--   Icon Section   -->
+				<div class="row">
+					<h4 class="center">I'm known as Kex on:</h4>
+					<h6 class="center" style="font-size: 0.8em">soon.</h6>
+					<p style="margin-bottom: 50%;"></p>
+				</div>
+
+			</div>
+			<br><br>
+		</div>
+
+		<footer class="page-footer orange">
+			<div class="container">
+				<div class="row">
+					<div class="col l6 s12">
+						<h5 class="white-text">About me</h5>
+						<p class="grey-text text-lighten-4">I'm a 16 year old guy who likes programming, anime, music and gaming way too much. I spend most of my time reading light novels and manga or watching anime.</p>
+
+
+					</div>
+					<div class="col l2 s12"></div>
+					<div class="col l4 s12">
+						<h5 class="white-text">Other projects</h5>
+						<ul>
+							<li><a class="white-text" href="https://themes.kex1016.ga">AniList theme collection</a></li>
+							<li><a class="white-text" href="https://blog.kex1016.ga">My blog (unfinished so far)</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<div class="container">
+					Made by <a class="orange-text text-lighten-3">Kex</a> with <span>❤️</span>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+
+	<!--  Scripts-->
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="../js/materialize.js"></script>
+	<script src="../js/init.js"></script>
+
+</body></html>

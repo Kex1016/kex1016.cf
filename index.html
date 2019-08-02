@@ -11,7 +11,7 @@
 	<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
 	<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 
-	<!--- Start of typewriter --->
+	<!--- Start of script --->
 	<script>
 		var i = 0;
 		var txt = 'Welcome to my site'; /* The text */
@@ -26,7 +26,9 @@
 		}
 
 		function underScore() {
-			typeWriter();
+			setTimeout(function() {
+				typeWriter();
+			}, 2000)
 			document.getElementById("titlestuff2").style.visibility = "visible";
 			setTimeout(function() {
 				document.getElementById("titlestuff2").style.visibility = "hidden";
@@ -46,7 +48,7 @@
 			})
 		}
 	</script>
-	<!--- End of typewriter --->
+	<!--- End of script --->
 
 </head>
 
@@ -54,14 +56,16 @@
 	<div id="content">
 		<div class="navbar-fixed">
 			<nav class="light-blue lighten-1" role="navigation">
-				<div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo center"><img width="25%" src="img/logo.png"></a>
+				<div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo center">Kex's site</a>
 					<ul class="right hide-on-med-and-down">
 						<li class="active"><a href="#">Home</a></li>
-						<li><a href="links">Links</a></li>
+						<li><a href="links/">Links</a></li>
+						<li><a href="anilist/">AniList</a></li>
 					</ul>
-
 					<ul id="nav-mobile" class="sidenav">
-						<li><a href="#" class="active">Home</a></li>
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="links/">Link</a></li>
+						<li><a href="anilist/">AniList</a></li>
 					</ul>
 					<a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 				</div>

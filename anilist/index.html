@@ -40,12 +40,24 @@
 				}, 300);
 			}, 700);
 		}
+
+		function Load() {
+			var loading = document.getElementById("anilist-container");
+			var content = document.getElementById("verynice-pog");
+			loading.style.visibility = "visible";
+			content.style.visibility = "hidden";
+			setTimeout(function() {
+				loading.style.visibility = "hidden";
+				content.style.visibility = "visible";
+				underScore();
+			}, 3000);
+		}
 	</script>
 	<!--- End of script --->
 
 </head>
 
-<body style="background: #263238; color: white;" onload="underScore()">
+<body style="background: #263238; color: white;" onload="Load()">
 	<div id="content">
 		<div class="navbar-fixed">
 			<nav class="light-blue lighten-1" role="navigation">
@@ -65,58 +77,69 @@
 				</div>
 			</nav>
 		</div>
-		<div class="section no-pad-bot" id="index-banner">
-			<div class="container">
-				<br><br>
-				<h1 class="header center orange-text"><span id="titlestuff"></span><span id="titlestuff2">_</span></h1>
-				<div class="center"><img class="responsive-img" src="../img/fallback.jpg" id="gql-avatar" width="20%"></div>
-			</div>
-		</div>
-
-
-		<div class="container">
-			<div class="section">
-
-				<!--   Icon Section   -->
-				<div class="row">
-					<h4 class="center">I'm known as <span id="gql-uname"></span> on AniList</h4>
-					<h6 class="center" style="font-size: 0.8em">Click on any of the list items to get some info on the anime/manga.</h6>
-					<p style="margin-top: 7%;"></p>
-					<h5 class="center">My top 10 anime:</h5>
-					<ul class="collapsible" id="gql-alist">
-						
-					</ul>
+		<div id="anilist-container">
+			<div id="anilist-center">
+				<div class="container">
+					<div class="box1"></div>
+					<div class="box2"></div>
+					<div class="box3"></div>
 				</div>
-
 			</div>
-			<br><br>
 		</div>
+		<div id="verynice-pog">
+			<div class="section no-pad-bot" id="index-banner">
+				<div class="container">
+					<br><br>
+					<h1 class="header center orange-text"><span id="titlestuff"></span><span id="titlestuff2">_</span></h1>
+					<div class="center"><img class="responsive-img" src="../img/fallback.jpg" id="gql-avatar" width="20%"></div>
+				</div>
+			</div>
 
-		<footer class="page-footer orange">
+
 			<div class="container">
-				<div class="row">
-					<div class="col l6 s12">
-						<h5 class="white-text">About me</h5>
-						<p class="grey-text text-lighten-4">I'm a 16 year old guy who likes programming, anime, music and gaming way too much. I spend most of my time reading light novels and manga or watching anime.</p>
+				<div class="section">
 
+					<!--   Icon Section   -->
+					<div class="row">
+						<h4 class="center">I'm known as <span id="gql-uname"></span> on AniList</h4>
+						<h6 class="center" style="font-size: 0.8em">Click on any of the list items to get some info on the anime/manga.</h6>
+						<p style="margin-top: 7%;"></p>
+						<h5 class="center">My top 10 anime:</h5>
+						<ul class="collapsible" id="gql-alist">
 
-					</div>
-					<div class="col l2 s12"></div>
-					<div class="col l4 s12">
-						<h5 class="white-text">Other projects</h5>
-						<ul>
-							<li><a class="white-text" href="https://themes.kex1016.ga">AniList theme collection</a></li>
-							<li><a class="white-text" href="https://blog.kex1016.ga">My blog (unfinished so far)</a></li>
 						</ul>
 					</div>
+
 				</div>
+				<br><br>
 			</div>
-			<div class="footer-copyright">
+
+			<footer class="page-footer orange">
 				<div class="container">
-					Made by <a class="orange-text text-lighten-3">Kex</a> with <span>❤️</span>
+					<div class="row">
+						<div class="col l6 s12">
+							<h5 class="white-text">About me</h5>
+							<p class="grey-text text-lighten-4">I'm a 16 year old guy who likes programming, anime, music and gaming way too much. I spend most of my time reading light novels and manga or watching anime.</p>
+
+
+						</div>
+						<div class="col l2 s12"></div>
+						<div class="col l4 s12">
+							<h5 class="white-text">Other projects</h5>
+							<ul>
+								<li><a class="white-text" href="https://themes.kex1016.ga">AniList theme collection</a></li>
+								<li><a class="white-text" href="https://blog.kex1016.ga">My blog (unfinished so far)</a></li>
+							</ul>
+						</div>
+					</div>
 				</div>
-			</div>
-		</footer>
+				<div class="footer-copyright">
+					<div class="container">
+						Made by <a class="orange-text text-lighten-3">Kex</a> with <span>❤️</span>
+					</div>
+				</div>
+			</footer>
+		</div>
 	</div>
 
 	<!--  Scripts-->

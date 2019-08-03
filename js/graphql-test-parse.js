@@ -22,4 +22,5 @@ function reset() {
 	document.getElementById("gql-avatar").innerHTML = "soontm";
 	document.getElementById("gql-avatar").src = "img/fallback.jpg";
 	document.getElementById("gql-favorites").innerHTML = "reset";
+	document.getElementById("buttons").style.color = "black"
 }

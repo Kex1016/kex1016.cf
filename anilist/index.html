@@ -61,22 +61,21 @@
 	<div id="content">
 		<div class="navbar-fixed">
 			<nav class="light-blue lighten-1" role="navigation">
-				<div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo center">Kex's site</a>
+				<div class="nav-wrapper container"><a id="logo-container" href="../" class="brand-logo center">Kex's site</a>
 					<ul class="right hide-on-med-and-down">
-						<li><a href="../">Home</a></li>
-						<li><a href="../links/">Links</a></li>
-						<li class="active"><a href="#">AniList</a></li>
-					</ul>
-
-					<ul id="nav-mobile" class="sidenav">
-						<li><a href="../">Home</a></li>
-						<li><a href="../links/">Links</a></li>
-						<li class="active"><a href="#">AniList</a></li>
+						<li><a href="../" class="waves-effect">Home</a></li>
+						<li><a href="../links/" class="waves-effect">Links</a></li>
+						<li class="active"><a href="#" class="waves-effect">AniList</a></li>
 					</ul>
 					<a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 				</div>
 			</nav>
 		</div>
+		<ul id="nav-mobile" class="sidenav">
+			<li><a href="../" class="waves-effect">Home</a></li>
+			<li><a href="../links/" class="waves-effect">Links</a></li>
+			<li class="active"><a href="#" class="waves-effect">AniList</a></li>
+		</ul>
 		<div id="anilist-container">
 			<div id="anilist-center">
 				<div class="container">
@@ -94,8 +93,7 @@
 					<div class="center"><img class="responsive-img" src="../img/fallback.jpg" id="gql-avatar" width="20%"></div>
 				</div>
 			</div>
-
-
+			
 			<div class="container">
 				<div class="section">
 
@@ -104,7 +102,7 @@
 						<h4 class="center">I'm known as <span id="gql-uname"></span> on AniList</h4>
 						<h6 class="center" style="font-size: 0.8em">Click on any of the list items to get some info on the anime/manga.</h6>
 						<p style="margin-top: 7%;"></p>
-						<h5 class="center">My top 10 anime:</h5>
+						<h5 class="center">My top <span id="gql-topanime"></span> anime:</h5>
 						<ul class="collapsible" id="gql-alist">
 
 						</ul>
@@ -151,6 +149,10 @@
 	<script>
 		$(document).ready(function() {
 			$('.collapsible').collapsible();
+		});
+
+		$(document).ready(function() {
+			$('.sidenav').sidenav();
 		});
 	</script>
 

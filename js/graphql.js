@@ -105,11 +105,8 @@ function handleData(obj) {
 	for (var p = 0; p < obj.data.User.favourites.anime.nodes.length; p++) {
 		for (var j = 0; j < obj.data.MediaListCollection.lists[1].entries.length; j++) {
 			if (obj.data.User.favourites.anime.nodes[p].id == obj.data.MediaListCollection.lists[1].entries[j].mediaId) {
-				var replaced = obj.data.MediaListCollection.lists[1].entries[j].notes.replace(/⭐/g, "⭐<br>");
-				replaced = replaced.replace(/lists/g, "yeet");
-				replaced = replaced.replace(/list./g, "list.<br>");
-				replaced = replaced.replace(/yeet/g, "lists");
-				replaced = replaced.replace(/Rating:/g, "<br><b>Rating:</b>");
+				var replaced = obj.data.MediaListCollection.lists[1].entries[j].notes.replace(/|/g, "<br><br>");
+				replaced = replaced.replace(/;/g, "<br>");
 				document.getElementById("gql-notes" + num).innerHTML += replaced;
 				num++;
 			}

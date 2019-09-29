@@ -1,3 +1,16 @@
+#anilist-container, #verynice-pog, #titlestuff2, a .fab, a .fas {
+	-webkit-transition: opacity .3s ease-in-out;
+    -moz-transition: opacity .3s ease-in-out;
+    -ms-transition: opacity .3s ease-in-out;
+    -o-transition: opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out;
+    transition: 0.3s;
+}
+
+.gap {
+	margin-top: 4rem
+}
+
 .icon-block {
 	padding: 0 15px;
 }

@@ -29,14 +29,14 @@
 			setTimeout(function() {
 				typeWriter();
 			}, 2000)
-			document.getElementById("titlestuff2").style.visibility = "visible";
+			document.getElementById("titlestuff2").style.opacity = 1;
 			setTimeout(function() {
-				document.getElementById("titlestuff2").style.visibility = "hidden";
+				document.getElementById("titlestuff2").style.opacity = 0;
 			}, 300);
 			setInterval(function() {
-				document.getElementById("titlestuff2").style.visibility = "visible";
+				document.getElementById("titlestuff2").style.opacity = 1;
 				setTimeout(function() {
-					document.getElementById("titlestuff2").style.visibility = "hidden";
+					document.getElementById("titlestuff2").style.opacity = 0;
 				}, 300);
 			}, 700);
 		}
@@ -44,12 +44,15 @@
 		function Load() {
 			var loading = document.getElementById("anilist-container");
 			var content = document.getElementById("verynice-pog");
-			loading.style.visibility = "visible";
-			content.style.visibility = "hidden";
+			loading.style.opacity = 1;
+			content.style.opacity = 0;
 			setTimeout(function() {
-				loading.style.visibility = "hidden";
-				content.style.visibility = "visible";
+				loading.style.opacity = 0;
+				content.style.opacity = 1;
 				underScore();
+				setTimeout(function() {
+					loading.style.visibility = "hidden";
+				}, 340)
 			}, 3000);
 		}
 	</script>
@@ -90,7 +93,7 @@
 				<div class="container">
 					<br><br>
 					<h1 class="header center orange-text"><span id="titlestuff"></span><span id="titlestuff2">_</span></h1>
-					<div class="center"><img class="responsive-img" src="../img/fallback.jpg" id="gql-avatar" width="20%"></div>
+					<div class="center"><img class="responsive-img" src="../img/fallback.png" id="gql-avatar" width="20%"></div>
 				</div>
 			</div>
 			

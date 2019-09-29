@@ -8,6 +8,7 @@
 
 	<!-- CSS  -->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/94390cda29.js"></script>
 	<link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
 	<link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
 
@@ -29,28 +30,20 @@
 			setTimeout(function() {
 				typeWriter();
 			}, 2000)
-			document.getElementById("titlestuff2").style.visibility = "visible";
+			document.getElementById("titlestuff2").style.opacity = 1;
 			setTimeout(function() {
-				document.getElementById("titlestuff2").style.visibility = "hidden";
+				document.getElementById("titlestuff2").style.opacity = 0;
 			}, 300);
 			setInterval(function() {
-				document.getElementById("titlestuff2").style.visibility = "visible";
+				document.getElementById("titlestuff2").style.opacity = 1;
 				setTimeout(function() {
-					document.getElementById("titlestuff2").style.visibility = "hidden";
+					document.getElementById("titlestuff2").style.opacity = 0;
 				}, 300);
 			}, 700);
 		}
 
 		function Load() {
-			var loading = document.getElementById("anilist-container");
-			var content = document.getElementById("verynice-pog");
-			loading.style.visibility = "visible";
-			content.style.visibility = "hidden";
-			setTimeout(function() {
-				loading.style.visibility = "hidden";
-				content.style.visibility = "visible";
-				underScore();
-			}, 3000);
+			underScore();
 		}
 	</script>
 	<!--- End of script --->
@@ -76,15 +69,6 @@
 			<li class="active"><a href="#" class="waves-effect">Links</a></li>
 			<li><a href="../links/" class="waves-effect">AniList</a></li>
 		</ul>
-		<div id="anilist-container">
-			<div id="anilist-center">
-				<div class="container">
-					<div class="box1"></div>
-					<div class="box2"></div>
-					<div class="box3"></div>
-				</div>
-			</div>
-		</div>
 		<div id="verynice-pog">
 			<div class="section no-pad-bot" id="index-banner">
 				<div class="container">
@@ -99,12 +83,15 @@
 				<div class="row">
 					<h4 class="center">I'm known as Kex on:</h4>
 					<h6 class="center" style="font-size: 0.8em">Click on any of the buttons to go to the designated site.</h6>
+					<p class="gap" />
 					<!-- content start "col s12 m4" -->
 
 					<div class="container center">
 						<div class="col s12 m4">
-							creeper
-							aww man
+							<a href="https://twitter.com/kex1016" target="_blank" class="btn-large waves-effect waves-light blue darken-1" onmouseover="Fuck(this)" onmouseout="DontFuck(this)"><i class="testing123 fab fa-twitter left"></i> Twitter</a><p />
+							<a href="https://soundcloud.com/kex1016" target="_blank" class="btn-large waves-effect waves-light orange darken-3" onmouseover="Fuck(this)" onmouseout="DontFuck(this)"><i class="testing123 fab fa-soundcloud left"></i> Soundcloud</a><p />
+							<a href="https://soundcloud.com/kex1016" target="_blank" class="btn-large waves-effect waves-light pink lighten-2" onmouseover="Fuck(this)" onmouseout="DontFuck(this)"><i class="testing123 fas fa-dot-circle left"></i> osu!</a><p />
+							<a href="https://soundcloud.com/kex1016" target="_blank" class="btn-large waves-effect waves-light pink lighten-2" onmouseover="Fuck(this)" onmouseout="DontFuck(this)"><i class="testing123 fas fa-dot-circle left"></i> osu!</a>
 						</div>
 						<div class="col s12 m4">
 							creeper

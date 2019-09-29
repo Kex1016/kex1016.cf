@@ -29,14 +29,14 @@
 			setTimeout(function() {
 				typeWriter();
 			}, 2000)
-			document.getElementById("titlestuff2").style.visibility = "visible";
+			document.getElementById("titlestuff2").style.opacity = 0;
 			setTimeout(function() {
-				document.getElementById("titlestuff2").style.visibility = "hidden";
+				document.getElementById("titlestuff2").style.opacity = 1;
 			}, 300);
 			setInterval(function() {
-				document.getElementById("titlestuff2").style.visibility = "visible";
+				document.getElementById("titlestuff2").style.opacity = 0;
 				setTimeout(function() {
-					document.getElementById("titlestuff2").style.visibility = "hidden";
+					document.getElementById("titlestuff2").style.opacity = 1;
 				}, 300);
 			}, 700);
 		}
@@ -77,9 +77,6 @@
 				<h1 class="header center orange-text"><span id="titlestuff"></span><span id="titlestuff2">_</span></h1>
 				<div class="row center">
 					<h5 class="header col s12 light">I put some of my work here.</h5>
-				</div>
-				<div class="row center">
-					<a href="#" id="download-button" class="btn-large waves-effect waves-light orange">Get Started (soon™)</a>
 				</div>
 			</div>
 		</div>
